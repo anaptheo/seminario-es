@@ -12,6 +12,17 @@ class Calculadora:
         else:
             return "zero"
 
+    def somar_lista(self, lista):
+        total = 0
+        for n in lista:
+            total += n
+        return total
+
+    def contar(self, n):  # pragma: no cover
+        while n > 0:
+            n -= 1
+        return n
+
 
 class CalculadoraCientifica(Calculadora):
     def quadrado(self, n):
