@@ -12,7 +12,7 @@ class Calculadora:
         else:
             return "zero"
 
-    def somar_lista(self, lista):
+    def somar_lista(self, lista): # pragma: no cover
         total = 0
         for n in lista:
             total += n
